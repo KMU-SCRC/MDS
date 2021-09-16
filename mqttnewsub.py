@@ -19,46 +19,50 @@ def on_message(client,userdata,message):
   message = str(message.payload.decode("utf-8"))
   meslist = message.split(':')
   print(meslist)
-  print(meslist[0])
   
   # f = null
    #파일이 몇번째 줄까지 써졌는지 확인
-  # print("message = ",message)
-  if (meslist[0] == "send start"):
-    # print("start")
-    if os.path.isfile('/home/kmuscrc/Desktop/MDS/'+meslist[1]+'.csv'): #파일이 존재할 경우
-      print("YES FILE")
-      with open('/home/kmuscrc/Desktop/MDS/'+meslist[1]+'.csv') as myfile:
-          total_lines = sum(1 for line in myfile)
-      print(total_lines)
-      filenum[meslist[1]] = total_lines + 1 #원하는 건 다음번 줄 
-      print(filenum.keys())
-      print(filenum.values())
+  # print("message = ",message)-
+  if (len(meslist) == 2):
+    if (meslist[0] == "send start"):
+      # print("start")
+      if os.path.isfile('/home/kmuscrc/Desktop/MDS/'+meslist[1]): #파일이 존재할 경우
+        print("YES FILE")
+        with open('/home/kmuscrc/Desktop/MDS/'+meslist[1]) as myfile:
+            total_lines = sum(1 for line in myfile)
+        print(total_lines)
+        filenum[meslist[1]] = total_lines + 1 #원하는 건 다음번 줄 
+        print(filenum.keys())
+        print(filenum.values())
+      else:
+        print('/home/kmuscrc/Desktop/MDS/'+meslist[1])
+        print("NO FILE")
+        filenum[meslist[1]] = 1
+        print(filenum)
+        # f = open(meslist[0]+".csv", 'a')
+    elif (meslist[0] == "send end"):
+      print("send end")
+      # f.write(datetime.datetime.now())
+      # f.close()
     else:
-      print('/home/kmuscrc/Desktop/MDS/'+meslist[1]+'.csv')
-      print("NO FILE")
-      filenum[meslist[1]] = 1
-      print(filenum)
-      # f = open(meslist[0]+".csv", 'a')
-  elif (meslist[0] == "end"):
-    print("the end")
-    # f.write(datetime.datetime.now())
-    # f.close()
-  else:
+      print("the other")
+  elif (len(meslist) == 3):
     print("meslist = ", meslist)
-    print("meslist[1] = ", meslist[1])
+    # print("meslist[1] = ", meslist[1])
     print("filenum = ", filenum)
-    print("filenum[meslist[0]] = ", filenum[meslist[0]])
+    # print("filenum[meslist[0]] = ", filenum[meslist[0]])
     print("-------------")
     if (int(meslist[1]) == filenum[meslist[0]]): #행수가 같으면
       print("in",meslist[1])
-      f = open(meslist[0]+".csv", 'a')
+      f = open(meslist[0], 'a')
       f.write(meslist[2])
       filenum[meslist[0]] += 1
       f.close()
       print(filenum[meslist[0]])
     else :
       print("different ")
+  else:
+    print("the other 2")
   
     
 
