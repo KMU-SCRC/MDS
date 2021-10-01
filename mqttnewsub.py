@@ -24,9 +24,7 @@ def on_message(client,userdata,message):
    #파일이 몇번째 줄까지 써졌는지 확인
   if (len(meslist) == 3):
     print("meslist = ", meslist)
-    # print("meslist[1] = ", meslist[1])
     print("filenum = ", filenum)
-    # print("filenum[meslist[0]] = ", filenum[meslist[0]])
     print("-------------")
     if os.path.isfile('/home/kmuscrc/Desktop/MDS/'+meslist[0]): #파일이 존재할 경우
         print("YES FILE")
