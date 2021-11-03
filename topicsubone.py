@@ -1,9 +1,6 @@
 import paho.mqtt.client as mqtt
-import csv
 from datetime import datetime
-import sys
 import os
-
 def on_connect(client,userdata,flag,rc):
     """브로커에 연결되었을 때 실행되는 함수
     """
@@ -22,13 +19,13 @@ def createFolder(directory):
             os.makedirs(directory)
     except OSError:
         print ('Error: Creating directory. ' +  directory)
-"""
+
 perform = {} # 성능 체크하는 딕셔너리 // key[토픽/파일명] : value([받은시간, stop 받은 횟수, restart 받은 횟수, 재시작 횟수, 끝난시각])
 senddone = {} # DONE 보냈는지 BOOL로 관리 // key[토픽/파일명] : value( bool )
 filenum = {} # 받은 줄 수 관리 // key[토픽/파일명] : value(저장된 줄 수)
 restartcheck = {} # 성능 체크시 재시작 횟수 체크를 위한 bool //key[토픽/파일명] : value( bool ) 
 thefile = "" # 토픽/파일명
-"""
+
 
 def on_message(client,userdata,message):
     """메시지 왔을 때 실행되는 함수
@@ -38,11 +35,11 @@ def on_message(client,userdata,message):
         userdata (int, hex()) : 보내는 client 고유값
         message (class) : 받는 message 값
     """
-    # global perform
-    # global senddone
-    # global filenum
-    # global thefile
-    # global restartcheck
+    global perform
+    global senddone
+    global filenum
+    global thefile
+    global restartcheck
     topiclist = message.topic.split('/') # message.topic = BIOLOGGER/PENGUIN/1/고유번호
     fileway = topiclist[0]+'/'+topiclist[1]+'/'+topiclist[2] # 디렉토리 경로 변수에 저장
     #   print(topiclist[3]) # 고유번호
@@ -52,12 +49,12 @@ def on_message(client,userdata,message):
     # print(thefile)
 
     if (len(meslist) == 3): # 데이터와 명령어 구분 (3개시 데이터)
-        createFolder('/media/kmuscrc/4E46C80946C7F02F/'+fileway)
+        createFolder('/media/kmuscrc/5A3C74053C73DB09/'+fileway)
 
-        if os.path.isfile('/media/kmuscrc/4E46C80946C7F02F/'+thefile) and thefile not in filenum and thefile not in senddone: # 파일이 존재할 때
+        if os.path.isfile('/media/kmuscrc/5A3C74053C73DB09/'+thefile) and thefile not in filenum and thefile not in senddone: # 파일이 존재할 때
             print("파일이 존재")
             senddone[thefile] = False #파일이 존재하고 딕셔너리에 없을 때
-            with open('/media/kmuscrc/4E46C80946C7F02F/'+thefile) as myfile: # 파일 열어서 몇 번째 줄까지 써져있는지 확인
+            with open('/media/kmuscrc/5A3C74053C73DB09/'+thefile) as myfile: # 파일 열어서 몇 번째 줄까지 써져있는지 확인
                 total_lines = sum(1 for line in myfile)
             filenum[thefile] = total_lines + 1 # 원하는 건 다음번 줄
             # perform[thefile] = [datetime.datetime.now(),0,0,0,datetime.datetime.now()] # 받은시간 ,stop,restart,전체 재시작,끝난시각
@@ -93,7 +90,7 @@ def on_message(client,userdata,message):
             else:
                 # 파일에 저장 
                 filenum[thefile] += 1
-                f = open('/media/kmuscrc/4E46C80946C7F02F/'+thefile, 'a')
+                f = open('/media/kmuscrc/5A3C74053C73DB09/'+thefile, 'a')
                 f.write(meslist[2])
                 f.close() 
         else:
