@@ -314,3 +314,349 @@ PENGUIN 1 속도 너무 느림 펭귄 2로 다시 실험 1915까지 수신
 --40M--1 바이오로거 기기 교체후 재실험 끊기는 현상 발생
 1~100M까지 이동하며 수신 17000줄 쯤에서 끊기는 현상 발생 -> 다시 연결시도 못함 // 100M 에서 전원 껏다 킨후 수신 완료 
 BIOLOGGER/PENGUIN/2/DataSample_2MB1.csv : [datetime.datetime(2021, 11, 3, 14, 42, 57, 632687), 2, 2, 1, datetime.datetime(2021, 11, 3, 14, 59, 38, 566175)]
+--30m--3 야간 재실험
+BIOLOGGER/SEAL/3/DataSample_2MB1.csv : [datetime.datetime(2021, 11, 3, 20, 49, 13, 864681), 0, 0, 0, datetime.datetime(2021, 11, 3, 20, 52, 32, 43046)]
+BIOLOGGER/PENGUIN/2/DataSample_2MB1.csv : [datetime.datetime(2021, 11, 3, 20, 49, 13, 287065), 0, 0, 0, datetime.datetime(2021, 11, 3, 20, 53, 45, 755094)]
+--30M--3 재실험 코드 다시 수정후 (oldipcode)-- 실내에서 테스트
+BIOLOGGER/PENGUIN/1/DataSample_2MB.csv : [datetime.datetime(2021, 11, 3, 21, 57, 3, 799774), 0, 0, 0, datetime.datetime(2021, 11, 3, 21, 58, 45, 751577)]
+BIOLOGGER/PENGUIN/2/DataSample_2MB.csv : [datetime.datetime(2021, 11, 3, 21, 57, 5, 99542), 0, 0, 0, datetime.datetime(2021, 11, 3, 21, 58, 52, 704518)]
+BIOLOGGER/SEAL/4/DataSample_2MB.csv : [datetime.datetime(2021, 11, 3, 22, 1, 33, 913997), 0, 0, 0, datetime.datetime(2021, 11, 3, 22, 2, 32, 677040)]
+BIOLOGGER/SEAL/3/DataSample_2MB.csv : [datetime.datetime(2021, 11, 3, 22, 7, 56, 991432), 0, 0, 0, datetime.datetime(2021, 11, 3, 22, 10, 5, 833081)]
+
+
+
+
+
+
+--30m/3 (2MB)-- *PENGUIN2: Failed (Wifi Connecting)
+BIOLOGGER/SEAL/3/DataSample_2MB.csv : [datetime.datetime(2021, 11, 4, 15, 14, 10, 462264), 9, 9, 3, datetime.datetime(2021, 11, 4, 15, 31, 8, 837426)]
+BIOLOGGER/PENGUIN/1/DataSample_2MB.csv : [datetime.datetime(2021, 11, 4, 15, 14, 10, 270200), 38, 9, 4, datetime.datetime(2021, 11, 4, 15, 31, 32, 226765)]
+
+--40m/1 (1KB)--
+BIOLOGGER/SEAL/4/1k10.csv : [datetime.datetime(2021, 11, 4, 15, 40, 38, 523916), 0, 0, 0, datetime.datetime(2021, 11, 4, 15, 40, 43, 217843)]
+BIOLOGGER/SEAL/4/1k1.csv : [datetime.datetime(2021, 11, 4, 15, 40, 49, 455228), 0, 0, 0, datetime.datetime(2021, 11, 4, 15, 40, 49, 622468)]
+BIOLOGGER/SEAL/4/1k2.csv : [datetime.datetime(2021, 11, 4, 15, 40, 50, 763607), 0, 0, 0, datetime.datetime(2021, 11, 4, 15, 40, 50, 907576)]
+BIOLOGGER/SEAL/4/1k3.csv : [datetime.datetime(2021, 11, 4, 15, 40, 52, 24525), 0, 0, 0, datetime.datetime(2021, 11, 4, 15, 40, 53, 671929)]
+BIOLOGGER/SEAL/4/1k4.csv : [datetime.datetime(2021, 11, 4, 15, 40, 54, 780526), 0, 0, 0, datetime.datetime(2021, 11, 4, 15, 40, 59, 378983)]
+BIOLOGGER/SEAL/4/1k5.csv : [datetime.datetime(2021, 11, 4, 15, 41, 0, 500215), 0, 0, 0, datetime.datetime(2021, 11, 4, 15, 41, 0, 581511)]
+BIOLOGGER/SEAL/4/1k6.csv : [datetime.datetime(2021, 11, 4, 15, 41, 1, 710405), 0, 0, 0, datetime.datetime(2021, 11, 4, 15, 41, 1, 823074)]
+BIOLOGGER/SEAL/4/1k7.csv : [datetime.datetime(2021, 11, 4, 15, 41, 2, 958956), 0, 0, 0, datetime.datetime(2021, 11, 4, 15, 41, 3, 85950)]
+BIOLOGGER/SEAL/4/1k8.csv : [datetime.datetime(2021, 11, 4, 15, 41, 4, 205139), 0, 0, 0, datetime.datetime(2021, 11, 4, 15, 41, 4, 309415)]
+BIOLOGGER/SEAL/4/1k9.csv : [datetime.datetime(2021, 11, 4, 15, 41, 5, 440620), 0, 0, 0, datetime.datetime(2021, 11, 4, 15, 41, 5, 581078)]
+
+--40m/1 (2MB)-- 
+*SEAL3: 
+Stopped - Line 2371 (15:51 ~ 55) - Reconnecting physically
+Stopped - Line 3566 (15:59:00 ~) - Reconnecting physically
+copy & paste
+{'BIOLOGGER/SEAL/3/DataSample_2MB.csv': [datetime.datetime(2021, 11, 4, 15, 44, 11, 102296), 0, 0, 0, datetime.datetime(2021, 11, 4, 15, 44, 11, 102324)]}
+perform items dict_items([('BIOLOGGER/SEAL/3/DataSample_2MB.csv', [datetime.datetime(2021, 11, 4, 15, 44, 11, 102296), 33, 34, 12, datetime.datetime(2021, 11, 4, 15, 44, 11, 102324)])])
+
+--80m/1 (1KB)--
+*Failed - Wifi Connection X
+
+--70m/1 (1KB)--
+*Failed - Wifi Connection X
+
+--100m/1 (1KB)--
+*Failed - Wifi Connection X
+
+--60m/1 (1KB)--
+*SEAL4 - Wifi Connection O / Empty SD Card
+
+--60m/1 (1MB)--
+*SEAL3 - Wifi Connection X
+*PENGHIN2 - Wifi Conection X
+
+--50m/1 (1KB)--
+*SEAL4 - Wifi Connection O / Empty SD Card
+
+--50m/1 (1MB)--
+BIOLOGGER/SEAL/3/DataSample_2MB.csv : [datetime.datetime(2021, 11, 4, 17, 9, 57, 580713), 15, 15, 4, datetime.datetime(2021, 11, 4, 17, 45, 36, 627423)]
+
+--40m/1 (1MB) - Vertical --
+BIOLOGGER/SEAL/3/DataSample_2MB.csv : [datetime.datetime(2021, 11, 4, 17, 52, 6, 75590), 29, 29, 10, datetime.datetime(2021, 11, 4, 18, 39, 3, 177372)]
+
+211105 @Libarary
+--?--
+BIOLOGGER/PENGUIN/1/DS20_5.CSv : [datetime.datetime(2021, 11, 5, 10, 23, 14, 326633), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 23, 14, 402319)]
+BIOLOGGER/PENGUIN/1/DS20_6.CSv : [datetime.datetime(2021, 11, 5, 10, 23, 15, 420911), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 23, 15, 464712)]
+BIOLOGGER/PENGUIN/1/DS20_7.CSv : [datetime.datetime(2021, 11, 5, 10, 23, 16, 488032), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 23, 16, 518284)]
+BIOLOGGER/PENGUIN/1/DS20_8.CSv : [datetime.datetime(2021, 11, 5, 10, 23, 17, 550546), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 23, 17, 587039)]
+BIOLOGGER/PENGUIN/1/DS20_9.CSv : [datetime.datetime(2021, 11, 5, 10, 23, 18, 600760), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 23, 18, 653383)]
+BIOLOGGER/PENGUIN/1/DS20_10.Csv : [datetime.datetime(2021, 11, 5, 10, 23, 19, 712148), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 23, 19, 751575)]
+BIOLOGGER/PENGUIN/1/DS20_1.CSv : [datetime.datetime(2021, 11, 5, 10, 23, 20, 768884), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 23, 20, 794090)]
+BIOLOGGER/PENGUIN/1/DS20_2.CSv : [datetime.datetime(2021, 11, 5, 10, 23, 21, 826053), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 23, 21, 853785)]
+BIOLOGGER/PENGUIN/1/DS20_3.CSv : [datetime.datetime(2021, 11, 5, 10, 23, 22, 864856), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 23, 22, 910139)]
+BIOLOGGER/PENGUIN/1/DS20_4.CSv : [datetime.datetime(2021, 11, 5, 10, 23, 23, 917709), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 23, 23, 988246)]
+BIOLOGGER/SEAL/4/DS20_5.csv : [datetime.datetime(2021, 11, 5, 10, 24, 50, 133481), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 24, 50, 237277)]
+BIOLOGGER/SEAL/4/DS20_6.csv : [datetime.datetime(2021, 11, 5, 10, 24, 51, 272600), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 24, 51, 368418)]
+BIOLOGGER/SEAL/4/DS20_7.csv : [datetime.datetime(2021, 11, 5, 10, 24, 52, 394044), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 24, 52, 459579)]
+BIOLOGGER/SEAL/4/DS20_8.csv : [datetime.datetime(2021, 11, 5, 10, 24, 53, 490847), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 24, 53, 523221)]
+BIOLOGGER/SEAL/4/DS20_9.csv : [datetime.datetime(2021, 11, 5, 10, 24, 54, 582061), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 24, 54, 640988)]
+BIOLOGGER/SEAL/4/DS20_10.csv : [datetime.datetime(2021, 11, 5, 10, 24, 55, 637573), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 24, 55, 714156)]
+BIOLOGGER/SEAL/4/DS20_1.csv : [datetime.datetime(2021, 11, 5, 10, 24, 56, 764646), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 24, 56, 781260)]
+BIOLOGGER/SEAL/4/DS20_2.csv : [datetime.datetime(2021, 11, 5, 10, 24, 57, 830308), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 24, 57, 869314)]
+BIOLOGGER/SEAL/4/DS20_3.csv : [datetime.datetime(2021, 11, 5, 10, 24, 58, 883909), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 24, 58, 990447)]
+BIOLOGGER/SEAL/4/DS20_4.csv : [datetime.datetime(2021, 11, 5, 10, 25, 0, 4856), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 25, 0, 50868)]
+BIOLOGGER/SEAL/3/DataSample_2MB.csv : [datetime.datetime(2021, 11, 5, 10, 23, 23, 997722), 11, 12, 2, datetime.datetime(2021, 11, 5, 10, 25, 51, 527724)]
+
+--60m--
+*BatteryBank Connection O Slowly, but anyway OK
+*Notebook Connection X
+
+--30m/1(2MB)--
+
+BIOLOGGER/PENGUIN/1/DataSample_2MB.csv : [datetime.datetime(2021, 11, 5, 10, 41, 21, 44586), 14, 14, 5, datetime.datetime(2021, 11, 5, 10, 53, 46, 942215)]
+
+--30m/1(1KB)--
+BIOLOGGER/SEAL/3/DS20_5.csv : [datetime.datetime(2021, 11, 5, 10, 56, 32, 515682), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 56, 32, 656505)]
+BIOLOGGER/SEAL/3/DS20_6.csv : [datetime.datetime(2021, 11, 5, 10, 56, 33, 763263), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 56, 33, 871697)]
+BIOLOGGER/SEAL/3/DS20_7.csv : [datetime.datetime(2021, 11, 5, 10, 56, 34, 971791), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 56, 35, 65268)]
+BIOLOGGER/SEAL/3/DS20_8.csv : [datetime.datetime(2021, 11, 5, 10, 56, 36, 160581), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 56, 36, 198968)]
+BIOLOGGER/SEAL/3/DS20_9.csv : [datetime.datetime(2021, 11, 5, 10, 56, 37, 287899), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 56, 37, 354103)]
+BIOLOGGER/SEAL/3/DS20_10.csv : [datetime.datetime(2021, 11, 5, 10, 56, 38, 444752), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 56, 42, 442628)]
+BIOLOGGER/SEAL/3/DS20_1.csv : [datetime.datetime(2021, 11, 5, 10, 56, 43, 947802), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 56, 44, 67016)]
+BIOLOGGER/SEAL/3/DS20_2.csv : [datetime.datetime(2021, 11, 5, 10, 56, 45, 172078), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 56, 45, 243112)]
+BIOLOGGER/SEAL/3/DS20_3.csv : [datetime.datetime(2021, 11, 5, 10, 56, 46, 324099), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 56, 46, 417874)]
+BIOLOGGER/SEAL/3/DS20_4.csv : [datetime.datetime(2021, 11, 5, 10, 56, 47, 625767), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 56, 47, 914507)]
+
+--40m/1(1KB)--
+BIOLOGGER/SEAL/3/DS20_5.csv : [datetime.datetime(2021, 11, 5, 10, 58, 59, 152634), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 58, 59, 329197)]
+BIOLOGGER/SEAL/3/DS20_6.csv : [datetime.datetime(2021, 11, 5, 10, 59, 0, 409049), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 59, 0, 490416)]
+BIOLOGGER/SEAL/3/DS20_7.csv : [datetime.datetime(2021, 11, 5, 10, 59, 1, 702059), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 59, 1, 812146)]
+BIOLOGGER/SEAL/3/DS20_8.csv : [datetime.datetime(2021, 11, 5, 10, 59, 2, 888832), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 59, 8, 862361)]
+BIOLOGGER/SEAL/3/DS20_9.csv : [datetime.datetime(2021, 11, 5, 10, 59, 9, 944863), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 59, 10, 125488)]
+BIOLOGGER/SEAL/3/DS20_10.csv : [datetime.datetime(2021, 11, 5, 10, 59, 11, 262378), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 59, 11, 402177)]
+BIOLOGGER/SEAL/3/DS20_1.csv : [datetime.datetime(2021, 11, 5, 10, 59, 13, 994076), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 59, 14, 114270)]
+BIOLOGGER/SEAL/3/DS20_2.csv : [datetime.datetime(2021, 11, 5, 10, 59, 15, 212255), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 59, 15, 361411)]
+BIOLOGGER/SEAL/3/DS20_3.csv : [datetime.datetime(2021, 11, 5, 10, 59, 16, 458347), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 59, 16, 536004)]
+BIOLOGGER/SEAL/3/DS20_4.csv : [datetime.datetime(2021, 11, 5, 10, 59, 17, 613072), 0, 0, 0, datetime.datetime(2021, 11, 5, 10, 59, 17, 693475)]
+
+--40m/1(2MB)--
+BIOLOGGER/PENGUIN/1/DataSample_2MB.csv : [datetime.datetime(2021, 11, 5, 11, 0, 21, 58727), 4, 4, 1, datetime.datetime(2021, 11, 5, 11, 14, 40, 710122)]
+
+--50m/1(1KB)--
+BIOLOGGER/SEAL/3/DS20_5.csv : [datetime.datetime(2021, 11, 5, 11, 17, 21, 470492), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 17, 21, 676487)]
+BIOLOGGER/SEAL/3/DS20_6.csv : [datetime.datetime(2021, 11, 5, 11, 17, 22, 756913), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 17, 22, 890052)]
+BIOLOGGER/SEAL/3/DS20_7.csv : [datetime.datetime(2021, 11, 5, 11, 17, 23, 970732), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 17, 24, 335639)]
+BIOLOGGER/SEAL/3/DS20_8.csv : [datetime.datetime(2021, 11, 5, 11, 17, 25, 416830), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 17, 25, 489809)]
+BIOLOGGER/SEAL/3/DS20_9.csv : [datetime.datetime(2021, 11, 5, 11, 17, 26, 587707), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 17, 26, 692009)]
+BIOLOGGER/SEAL/3/DS20_10.csv : [datetime.datetime(2021, 11, 5, 11, 17, 27, 811918), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 17, 30, 796510)]
+BIOLOGGER/SEAL/3/DS20_1.csv : [datetime.datetime(2021, 11, 5, 11, 17, 31, 880837), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 17, 31, 947201)]
+BIOLOGGER/SEAL/3/DS20_2.csv : [datetime.datetime(2021, 11, 5, 11, 17, 33, 44184), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 17, 33, 149781)]
+BIOLOGGER/SEAL/3/DS20_3.csv : [datetime.datetime(2021, 11, 5, 11, 17, 34, 236769), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 17, 34, 360102)]
+BIOLOGGER/SEAL/3/DS20_4.csv : [datetime.datetime(2021, 11, 5, 11, 17, 35, 448011), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 17, 35, 531190)]
+
+--50m/1(2MB)--
+*Decode Error 1: 7759
+BIOLOGGER/PENGUIN/1/DataSample_2MB.csv : [datetime.datetime(2021, 11, 5, 11, 27, 30, 619968), 2, 2, 1, datetime.datetime(2021, 11, 5, 11, 39, 52, 435443)]
+
+--60m/1(1KB)--
+BIOLOGGER/SEAL/3/DS20_5.csv : [datetime.datetime(2021, 11, 5, 11, 42, 39, 768743), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 42, 41, 267840)]
+BIOLOGGER/SEAL/3/DS20_6.csv : [datetime.datetime(2021, 11, 5, 11, 42, 42, 352869), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 42, 42, 443020)]
+BIOLOGGER/SEAL/3/DS20_7.csv : [datetime.datetime(2021, 11, 5, 11, 42, 43, 528676), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 42, 43, 600465)]
+BIOLOGGER/SEAL/3/DS20_8.csv : [datetime.datetime(2021, 11, 5, 11, 42, 44, 705169), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 42, 44, 888956)]
+BIOLOGGER/SEAL/3/DS20_9.csv : [datetime.datetime(2021, 11, 5, 11, 42, 46, 12798), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 42, 46, 289600)]
+BIOLOGGER/SEAL/3/DS20_10.csv : [datetime.datetime(2021, 11, 5, 11, 42, 47, 372885), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 42, 50, 817399)]
+BIOLOGGER/SEAL/3/DS20_1.csv : [datetime.datetime(2021, 11, 5, 11, 42, 51, 998515), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 42, 52, 260233)]
+BIOLOGGER/SEAL/3/DS20_2.csv : [datetime.datetime(2021, 11, 5, 11, 42, 53, 392316), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 42, 53, 846252)]
+BIOLOGGER/SEAL/3/DS20_3.csv : [datetime.datetime(2021, 11, 5, 11, 42, 54, 950045), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 42, 55, 178778)]
+BIOLOGGER/SEAL/3/DS20_4.csv : [datetime.datetime(2021, 11, 5, 11, 42, 56, 264989), 0, 0, 0, datetime.datetime(2021, 11, 5, 11, 42, 57, 607795)]
+
+--60m/1(2MB)--
+*Stopped: Line 3809 
+
+--70m/1(1KB)--
+BIOLOGGER/SEAL/3/DS20_5.csv : [datetime.datetime(2021, 11, 5, 16, 23, 13, 191231), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 23, 19, 258744)]
+BIOLOGGER/SEAL/3/DS20_6.csv : [datetime.datetime(2021, 11, 5, 16, 23, 20, 347083), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 23, 29, 101600)]
+BIOLOGGER/SEAL/3/DS20_7.csv : [datetime.datetime(2021, 11, 5, 16, 23, 34, 324277), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 23, 34, 414532)]
+BIOLOGGER/SEAL/3/DS20_8.csv : [datetime.datetime(2021, 11, 5, 16, 23, 35, 512437), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 23, 36, 940808)]
+BIOLOGGER/SEAL/3/DS20_9.csv : [datetime.datetime(2021, 11, 5, 16, 23, 38, 17719), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 23, 38, 104372)]
+BIOLOGGER/SEAL/3/DS20_10.csv : [datetime.datetime(2021, 11, 5, 16, 23, 39, 184681), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 23, 43, 524379)]
+BIOLOGGER/SEAL/3/DS20_1.csv : [datetime.datetime(2021, 11, 5, 16, 23, 44, 629957), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 23, 46, 106234)]
+BIOLOGGER/SEAL/3/DS20_2.csv : [datetime.datetime(2021, 11, 5, 16, 23, 47, 202546), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 23, 47, 283147)]
+BIOLOGGER/SEAL/3/DS20_3.csv : [datetime.datetime(2021, 11, 5, 16, 23, 48, 383744), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 23, 48, 449176)]
+BIOLOGGER/SEAL/3/DS20_4.csv : [datetime.datetime(2021, 11, 5, 16, 23, 49, 532655), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 23, 49, 649827)]
+
+--80m/1(1KB)--
+BIOLOGGER/SEAL/3/DS20_5.csv : [datetime.datetime(2021, 11, 5, 16, 30, 34, 918330), 8, 8, 2, datetime.datetime(2021, 11, 5, 16, 32, 25, 150481)]
+BIOLOGGER/SEAL/3/DS20_5.csv : [datetime.datetime(2021, 11, 5, 16, 30, 34, 918330), 19, 8, 3, datetime.datetime(2021, 11, 5, 16, 33, 12, 763193)]
+BIOLOGGER/SEAL/3/DS20_6.csv : [datetime.datetime(2021, 11, 5, 16, 33, 31, 699920), 0, 12, 0, datetime.datetime(2021, 11, 5, 16, 33, 39, 952289)]
+BIOLOGGER/SEAL/3/DS20_5.csv : [datetime.datetime(2021, 11, 5, 16, 30, 34, 918330), 22, 11, 4, datetime.datetime(2021, 11, 5, 16, 34, 28, 738749)]
+BIOLOGGER/SEAL/3/DS20_6.csv : [datetime.datetime(2021, 11, 5, 16, 33, 31, 699920), 2, 14, 1, datetime.datetime(2021, 11, 5, 16, 34, 34, 265346)]
+BIOLOGGER/SEAL/3/DS20_7.csv : [datetime.datetime(2021, 11, 5, 16, 33, 41, 36882), 3, 3, 1, datetime.datetime(2021, 11, 5, 16, 34, 44, 585014)]
+BIOLOGGER/SEAL/3/DS20_8.csv : [datetime.datetime(2021, 11, 5, 16, 34, 45, 682698), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 34, 55, 595889)]
+BIOLOGGER/SEAL/3/DS20_9.csv : [datetime.datetime(2021, 11, 5, 16, 34, 56, 688530), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 34, 59, 598728)]
+BIOLOGGER/SEAL/3/DS20_10.csv : [datetime.datetime(2021, 11, 5, 16, 35, 11, 150208), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 35, 11, 228522)]
+BIOLOGGER/SEAL/3/DS20_1.csv : [datetime.datetime(2021, 11, 5, 16, 35, 12, 312251), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 35, 12, 413807)]
+BIOLOGGER/SEAL/3/DS20_2.csv : [datetime.datetime(2021, 11, 5, 16, 35, 13, 523619), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 35, 15, 77518)]
+BIOLOGGER/SEAL/3/DS20_3.csv : [datetime.datetime(2021, 11, 5, 16, 35, 16, 218527), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 35, 16, 315031)]
+BIOLOGGER/SEAL/3/DS20_4.csv : [datetime.datetime(2021, 11, 5, 16, 35, 17, 404922), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 35, 17, 484453)]
+
+--90m/1(1KB)--
+BIOLOGGER/SEAL/3/DS20_5.csv : [datetime.datetime(2021, 11, 5, 16, 38, 5, 860454), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 38, 11, 705083)]
+BIOLOGGER/SEAL/3/DS20_6.csv : [datetime.datetime(2021, 11, 5, 16, 38, 12, 831632), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 38, 18, 424591)]
+BIOLOGGER/SEAL/3/DS20_5.csv : [datetime.datetime(2021, 11, 5, 16, 38, 5, 860454), 8, 9, 1, datetime.datetime(2021, 11, 5, 16, 39, 45, 85531)]
+BIOLOGGER/SEAL/3/DS20_6.csv : [datetime.datetime(2021, 11, 5, 16, 38, 12, 831632), 3, 3, 1, datetime.datetime(2021, 11, 5, 16, 39, 49, 744166)]
+BIOLOGGER/SEAL/3/DS20_7.csv : [datetime.datetime(2021, 11, 5, 16, 39, 50, 647224), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 39, 50, 834346)]
+BIOLOGGER/SEAL/3/DS20_5.csv : [datetime.datetime(2021, 11, 5, 16, 38, 5, 860454), 10, 11, 2, datetime.datetime(2021, 11, 5, 16, 41, 29, 118462)]
+BIOLOGGER/SEAL/3/DS20_6.csv : [datetime.datetime(2021, 11, 5, 16, 38, 12, 831632), 5, 5, 2, datetime.datetime(2021, 11, 5, 16, 41, 31, 324151)]
+BIOLOGGER/SEAL/3/DS20_7.csv : [datetime.datetime(2021, 11, 5, 16, 39, 50, 647224), 2, 2, 1, datetime.datetime(2021, 11, 5, 16, 41, 39, 540278)]
+BIOLOGGER/SEAL/3/DS20_8.csv : [datetime.datetime(2021, 11, 5, 16, 39, 51, 920196), 2, 2, 1, datetime.datetime(2021, 11, 5, 16, 41, 43, 162209)]
+BIOLOGGER/SEAL/3/DS20_9.csv : [datetime.datetime(2021, 11, 5, 16, 41, 44, 248111), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 41, 45, 650395)]
+BIOLOGGER/SEAL/3/DS20_10.csv : [datetime.datetime(2021, 11, 5, 16, 41, 46, 741040), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 41, 46, 963983)]
+BIOLOGGER/SEAL/3/DS20_1.csv : [datetime.datetime(2021, 11, 5, 16, 41, 48, 52627), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 41, 52, 747313)]
+BIOLOGGER/SEAL/3/DS20_2.csv : [datetime.datetime(2021, 11, 5, 16, 41, 55, 174021), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 41, 55, 330185)]
+BIOLOGGER/SEAL/3/DS20_3.csv : [datetime.datetime(2021, 11, 5, 16, 41, 56, 921780), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 41, 58, 224197)]
+BIOLOGGER/SEAL/3/DS20_4.csv : [datetime.datetime(2021, 11, 5, 16, 41, 59, 320607), 0, 0, 0, datetime.datetime(2021, 11, 5, 16, 42, 0, 780831)]
+
+--100m/1(1KB)--
+*Connection X
+
+--99m/1(1KB)--
+*Connection X
+
+--95m/1(1KB)--
+*Connection X
+
+--94m/1(1KB)--
+*Connection X
+
+--93m/1(1KB)--
+*Connection X
+
+--92m/1(1KB)--
+*Connection X
+
+--91m/1(1KB)--
+BIOLOGGER/SEAL/3/DS20_5.csv : [datetime.datetime(2021, 11, 5, 17, 9, 30, 288420), 5, 2, 1, datetime.datetime(2021, 11, 5, 17, 11, 7, 895037)]
+BIOLOGGER/SEAL/3/DS20_6.csv : [datetime.datetime(2021, 11, 5, 17, 11, 11, 221817), 0, 0, 0, datetime.datetime(2021, 11, 5, 17, 11, 11, 288484)]
+BIOLOGGER/SEAL/3/DS20_7.csv : [datetime.datetime(2021, 11, 5, 17, 11, 12, 367297), 0, 0, 0, datetime.datetime(2021, 11, 5, 17, 11, 16, 742848)]
+BIOLOGGER/SEAL/3/DS20_8.csv : [datetime.datetime(2021, 11, 5, 17, 11, 19, 240079), 0, 0, 0, datetime.datetime(2021, 11, 5, 17, 11, 32, 139999)]
+BIOLOGGER/SEAL/3/DS20_9.csv : [datetime.datetime(2021, 11, 5, 17, 11, 43, 460700), 0, 0, 0, datetime.datetime(2021, 11, 5, 17, 11, 43, 683228)]
+BIOLOGGER/SEAL/3/DS20_5.csv : [datetime.datetime(2021, 11, 5, 17, 9, 30, 288420), 15, 5, 2, datetime.datetime(2021, 11, 5, 17, 13, 43, 402559)]
+BIOLOGGER/SEAL/3/DS20_6.csv : [datetime.datetime(2021, 11, 5, 17, 11, 11, 221817), 2, 2, 1, datetime.datetime(2021, 11, 5, 17, 13, 45, 625370)]
+BIOLOGGER/SEAL/3/DS20_7.csv : [datetime.datetime(2021, 11, 5, 17, 11, 12, 367297), 4, 5, 1, datetime.datetime(2021, 11, 5, 17, 13, 51, 200909)]
+BIOLOGGER/SEAL/3/DS20_8.csv : [datetime.datetime(2021, 11, 5, 17, 11, 19, 240079), 4, 4, 1, datetime.datetime(2021, 11, 5, 17, 13, 58, 584247)]
+BIOLOGGER/SEAL/3/DS20_9.csv : [datetime.datetime(2021, 11, 5, 17, 11, 43, 460700), 2, 2, 1, datetime.datetime(2021, 11, 5, 17, 14, 2, 875522)]
+BIOLOGGER/SEAL/3/DS20_10.csv : [datetime.datetime(2021, 11, 5, 17, 11, 46, 63816), 2, 2, 1, datetime.datetime(2021, 11, 5, 17, 14, 32, 426774)]
+BIOLOGGER/SEAL/3/DS20_1.csv : [datetime.datetime(2021, 11, 5, 17, 14, 33, 532106), 0, 0, 0, datetime.datetime(2021, 11, 5, 17, 14, 57, 665715)]
+BIOLOGGER/SEAL/3/DS20_5.csv : [datetime.datetime(2021, 11, 5, 17, 9, 30, 288420), 18, 8, 3, datetime.datetime(2021, 11, 5, 17, 15, 53, 225016)]
+BIOLOGGER/SEAL/3/DS20_5.csv : [datetime.datetime(2021, 11, 5, 17, 9, 30, 288420), 23, 13, 4, datetime.datetime(2021, 11, 5, 17, 18, 17, 585383)]
+BIOLOGGER/SEAL/3/DS20_5.csv : [datetime.datetime(2021, 11, 5, 17, 9, 30, 288420), 29, 31, 5, datetime.datetime(2021, 11, 5, 17, 22, 27, 456050)]
+BIOLOGGER/SEAL/3/DS20_6.csv : [datetime.datetime(2021, 11, 5, 17, 11, 11, 221817), 17, 9, 2, datetime.datetime(2021, 11, 5, 17, 22, 34, 517549)]
+BIOLOGGER/SEAL/3/DS20_7.csv : [datetime.datetime(2021, 11, 5, 17, 11, 12, 367297), 9, 9, 2, datetime.datetime(2021, 11, 5, 17, 22, 40, 193556)]
+BIOLOGGER/SEAL/3/DS20_8.csv : [datetime.datetime(2021, 11, 5, 17, 11, 19, 240079), 7, 7, 2, datetime.datetime(2021, 11, 5, 17, 22, 44, 564845)]
+BIOLOGGER/SEAL/3/DS20_9.csv : [datetime.datetime(2021, 11, 5, 17, 11, 43, 460700), 5, 6, 2, datetime.datetime(2021, 11, 5, 17, 22, 49, 244435)]
+BIOLOGGER/SEAL/3/DS20_10.csv : [datetime.datetime(2021, 11, 5, 17, 11, 46, 63816), 9, 9, 2, datetime.datetime(2021, 11, 5, 17, 23, 51, 65117)]
+BIOLOGGER/SEAL/3/DS20_1.csv : [datetime.datetime(2021, 11, 5, 17, 14, 33, 532106), 2, 2, 1, datetime.datetime(2021, 11, 5, 17, 23, 52, 362205)]
+BIOLOGGER/SEAL/3/DS20_2.csv : [datetime.datetime(2021, 11, 5, 17, 14, 59, 756853), 2, 2, 1, datetime.datetime(2021, 11, 5, 17, 23, 53, 544108)]
+BIOLOGGER/SEAL/3/DS20_3.csv : [datetime.datetime(2021, 11, 5, 17, 23, 53, 662662), 0, 0, 0, datetime.datetime(2021, 11, 5, 17, 23, 53, 915270)]
+BIOLOGGER/SEAL/3/DS20_4.csv : [datetime.datetime(2021, 11, 5, 17, 23, 55, 108768), 0, 0, 0, datetime.datetime(2021, 11, 5, 17, 23, 55, 239096)]
+
+--60m/1(2MB)--
+*Stopped: Line 1749 - Decode Error
+
+--70m/1(2MB)--
+*Stopped: Line 8166 - They don't receive any message anymore.
+
+--60m/1(2MB)--
+*Board Change
+*Reconnection physically
+*Stopped: 라인 6083 - 계속 놔두면 언젠가는 다 보낼 것 같음
+
+
+211107
+--10m/1(1KB)--
+BIOLOGGER/SEAL/3/DS20_5.csv : [datetime.datetime(2021, 11, 7, 15, 11, 23, 296669), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 11, 23, 409493)]
+BIOLOGGER/SEAL/3/DS20_6.csv : [datetime.datetime(2021, 11, 7, 15, 11, 24, 491221), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 11, 24, 555197)]
+BIOLOGGER/SEAL/3/DS20_7.csv : [datetime.datetime(2021, 11, 7, 15, 11, 25, 633049), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 11, 25, 695218)]
+BIOLOGGER/SEAL/3/DS20_8.csv : [datetime.datetime(2021, 11, 7, 15, 11, 26, 795145), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 11, 26, 874687)]
+BIOLOGGER/SEAL/3/DS20_9.csv : [datetime.datetime(2021, 11, 7, 15, 11, 27, 958717), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 11, 28, 23019)]
+BIOLOGGER/SEAL/3/DS20_10.csv : [datetime.datetime(2021, 11, 7, 15, 11, 35, 184035), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 11, 41, 238925)]
+BIOLOGGER/SEAL/3/DS20_1.csv : [datetime.datetime(2021, 11, 7, 15, 11, 42, 356801), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 11, 42, 438210)]
+BIOLOGGER/SEAL/3/DS20_2.csv : [datetime.datetime(2021, 11, 7, 15, 11, 43, 514748), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 11, 43, 588120)]
+BIOLOGGER/SEAL/3/DS20_3.csv : [datetime.datetime(2021, 11, 7, 15, 11, 45, 737869), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 11, 45, 809098)]
+BIOLOGGER/SEAL/3/DS20_4.csv : [datetime.datetime(2021, 11, 7, 15, 11, 46, 913206), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 11, 47, 7147)]
+
+--10m/1(2MB)--
+BIOLOGGER/PENGUIN/1/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 15, 13, 18, 562210), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 18, 10, 422492)]
+
+--10m/2(2MB)--
+BIOLOGGER/PENGUIN/2/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 15, 20, 58, 276004), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 24, 55, 81404)]
+BIOLOGGER/PENGUIN/1/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 15, 20, 58, 87401), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 27, 31, 73128)]
+
+--10m/3(2MB)--
+BIOLOGGER/PENGUIN/2/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 15, 36, 45, 452900), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 40, 17, 80154)]
+BIOLOGGER/PENGUIN/1/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 15, 36, 48, 754364), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 40, 47, 135515)]
+BIOLOGGER/SEAL/3/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 15, 36, 47, 732805), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 43, 11, 325382)]
+
+--20m/1(1KB)--
+BIOLOGGER/PENGUIN/1/DS20_5.csv : [datetime.datetime(2021, 11, 7, 15, 46, 19, 914869), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 46, 34, 805100)]
+BIOLOGGER/PENGUIN/1/DS20_6.csv : [datetime.datetime(2021, 11, 7, 15, 46, 35, 910898), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 46, 36, 160460)]
+BIOLOGGER/PENGUIN/1/DS20_7.csv : [datetime.datetime(2021, 11, 7, 15, 46, 37, 259737), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 46, 37, 419548)]
+BIOLOGGER/PENGUIN/1/DS20_8.csv : [datetime.datetime(2021, 11, 7, 15, 46, 38, 525489), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 46, 38, 640058)]
+BIOLOGGER/PENGUIN/1/DS20_9.csv : [datetime.datetime(2021, 11, 7, 15, 46, 39, 710529), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 46, 39, 845951)]
+BIOLOGGER/PENGUIN/1/DS20_10.csv : [datetime.datetime(2021, 11, 7, 15, 46, 40, 955493), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 46, 41, 93934)]
+BIOLOGGER/PENGUIN/1/DS20_1.csv : [datetime.datetime(2021, 11, 7, 15, 46, 42, 203172), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 46, 42, 329962)]
+BIOLOGGER/PENGUIN/1/DS20_2.csv : [datetime.datetime(2021, 11, 7, 15, 46, 43, 438763), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 46, 43, 563646)]
+BIOLOGGER/PENGUIN/1/DS20_3.csv : [datetime.datetime(2021, 11, 7, 15, 46, 44, 636708), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 46, 44, 767133)]
+BIOLOGGER/PENGUIN/1/DS20_4.csv : [datetime.datetime(2021, 11, 7, 15, 46, 45, 847776), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 46, 45, 997164)]
+
+--20m/1(2MB)--
+BIOLOGGER/SEAL/3/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 15, 49, 44, 260383), 0, 0, 0, datetime.datetime(2021, 11, 7, 15, 57, 19, 319177)]
+
+--20m/2(2MB)--
+BIOLOGGER/PENGUIN/1/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 15, 58, 54, 687368), 0, 0, 0, datetime.datetime(2021, 11, 7, 16, 13, 30, 324349)]
+BIOLOGGER/PENGUIN/2/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 15, 59, 3, 525190), 11, 12, 4, datetime.datetime(2021, 11, 7, 16, 14, 34, 370674)]
+
+--20m/3(2MB)--
+BIOLOGGER/PENGUIN/1/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 16, 16, 1, 745246), 0, 0, 0, datetime.datetime(2021, 11, 7, 16, 19, 36, 905752)]
+BIOLOGGER/SEAL/3/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 16, 16, 1, 553847), 0, 0, 0, datetime.datetime(2021, 11, 7, 16, 20, 2, 631285)]
+BIOLOGGER/PENGUIN/2/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 16, 15, 59, 687175), 0, 0, 0, datetime.datetime(2021, 11, 7, 16, 20, 27, 104025)]
+
+--30m/1(1KB)--
+BIOLOGGER/PENGUIN/1/DS20_5.csv : [datetime.datetime(2021, 11, 7, 16, 23, 37, 95696), 0, 0, 0, datetime.datetime(2021, 11, 7, 16, 23, 37, 226736)]
+BIOLOGGER/PENGUIN/1/DS20_6.csv : [datetime.datetime(2021, 11, 7, 16, 23, 38, 306105), 0, 0, 0, datetime.datetime(2021, 11, 7, 16, 23, 38, 395598)]
+BIOLOGGER/PENGUIN/1/DS20_7.csv : [datetime.datetime(2021, 11, 7, 16, 23, 38, 504472), 0, 0, 0, datetime.datetime(2021, 11, 7, 16, 23, 38, 585604)]
+BIOLOGGER/PENGUIN/1/DS20_8.csv : [datetime.datetime(2021, 11, 7, 16, 23, 39, 656320), 0, 0, 0, datetime.datetime(2021, 11, 7, 16, 23, 39, 750195)]
+BIOLOGGER/PENGUIN/1/DS20_9.csv : [datetime.datetime(2021, 11, 7, 16, 23, 40, 824048), 0, 0, 0, datetime.datetime(2021, 11, 7, 16, 23, 40, 882736)]
+BIOLOGGER/PENGUIN/1/DS20_10.csv : [datetime.datetime(2021, 11, 7, 16, 23, 41, 935650), 0, 0, 0, datetime.datetime(2021, 11, 7, 16, 23, 41, 980347)]
+BIOLOGGER/PENGUIN/1/DS20_1.csv : [datetime.datetime(2021, 11, 7, 16, 23, 43, 39154), 0, 0, 0, datetime.datetime(2021, 11, 7, 16, 23, 43, 119272)]
+BIOLOGGER/PENGUIN/1/DS20_2.csv : [datetime.datetime(2021, 11, 7, 16, 23, 44, 171194), 0, 0, 0, datetime.datetime(2021, 11, 7, 16, 23, 44, 234726)]
+BIOLOGGER/PENGUIN/1/DS20_3.csv : [datetime.datetime(2021, 11, 7, 16, 23, 45, 296127), 0, 0, 0, datetime.datetime(2021, 11, 7, 16, 23, 45, 383967)]
+BIOLOGGER/PENGUIN/1/DS20_4.csv : [datetime.datetime(2021, 11, 7, 16, 23, 46, 454428), 0, 0, 0, datetime.datetime(2021, 11, 7, 16, 23, 46, 539990)]
+
+--30m/1(2MB)--
+BIOLOGGER/SEAL/3/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 16, 25, 46, 433755), 9, 9, 3, datetime.datetime(2021, 11, 7, 16, 36, 56, 42665)]
+
+--30m/2(2MB)--
+BIOLOGGER/PENGUIN/1/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 16, 39, 6, 438867), 0, 0, 0, datetime.datetime(2021, 11, 7, 16, 43, 13, 447756)]
+BIOLOGGER/PENGUIN/2/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 16, 39, 4, 791370), 5, 5, 2, datetime.datetime(2021, 11, 7, 16, 43, 34, 263161)]
+
+--30m/3(2MB)--
+BIOLOGGER/SEAL/3/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 16, 45, 7, 693392), 0, 0, 0, datetime.datetime(2021, 11, 7, 16, 48, 13, 780706)]
+BIOLOGGER/PENGUIN/2/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 16, 45, 6, 533541), 0, 0, 0, datetime.datetime(2021, 11, 7, 16, 48, 20, 577997)]
+BIOLOGGER/PENGUIN/1/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 16, 45, 7, 591818), 0, 0, 0, datetime.datetime(2021, 11, 7, 16, 49, 49, 770743)]
+
+--40m/2(2MB)--
+BIOLOGGER/PENGUIN/1/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 16, 52, 13, 483021), 0, 0, 0, datetime.datetime(2021, 11, 7, 17, 0, 2, 298649)]
+BIOLOGGER/PENGUIN/2/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 16, 52, 14, 502304), 0, 0, 0, datetime.datetime(2021, 11, 7, 17, 4, 3, 586765)]
+
+--40m/3(2MB)--
+BIOLOGGER/PENGUIN/2/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 17, 6, 6, 235295), 2, 2, 1, datetime.datetime(2021, 11, 7, 17, 13, 6, 847739)]
+BIOLOGGER/SEAL/3/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 17, 5, 59, 223979), 5, 5, 2, datetime.datetime(2021, 11, 7, 17, 14, 52, 497151)]
+BIOLOGGER/PENGUIN/1/DataSample_2MB.csv : [datetime.datetime(2021, 11, 7, 17, 6, 6, 727950), 6, 6, 2, datetime.datetime(2021, 11, 7, 17, 18, 49, 80839)]
+
+--40m/1(2MB)--
+*Decode Error: Line 6085
+
+--50m/2(2MB)--
+*Decode Error: PENGUIN1 - Line 471 / PENGUIN2 - Line 3494
+
+--50m/3(2MB)--
+*Decode Error: PENGUIN2 - Line 3558 / SEAL3 - Line 2472 / PENGUIN1 - Line 1085
+
+--60m/1(2MB)--
+*Stopped: Line 19 ("I dont want this message")
