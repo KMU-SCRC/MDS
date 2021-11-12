@@ -1,0 +1,6 @@
+***dronedrone35/Khadas-No.A***
+--50m/1(2MB) Disruption: 24hours-- OK
+BIOLOGGER/PENGUIN/6/DataSample_2MB.csv : [datetime.datetime(2021, 11, 10, 19, 36, 16, 743444), 2, 2, 1, datetime.datetime(2021, 11, 11, 19, 44, 12, 584631)]
+
+--30m/1(2MB) Disruption: 12hours - 2nd-- OK
+BIOLOGGER/PENGUIN/6/DataSample_2MB.csv : [datetime.datetime(2021, 11, 11, 21, 58, 7, 847346), 3, 3, 1, datetime.datetime(2021, 11, 12, 9, 59, 8, 925014)]
